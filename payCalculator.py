@@ -7,7 +7,7 @@ def calculatePay():
     if hrs > 40:
         base_hrs = 40
         OT_hrs = hrs - 40
-        OT_rate = 10 * 1.5
+        OT_rate = rate * 1.5
         total = (base_hrs * rate) + (OT_hrs * OT_rate)
 
     print("Pay:", total)
