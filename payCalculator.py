@@ -1,7 +1,7 @@
 def calculatePay():
     # This first line is provided for you
-    hrs = int(input("Enter Hours:"))
-    rate = int(input("Enter Rate:"))
+    hrs = float(input("Enter Hours:"))
+    rate = float(input("Enter Rate:"))
 
     total = hrs * rate
     if hrs > 40:
@@ -10,7 +10,7 @@ def calculatePay():
         OT_rate = 10 * 1.5
         total = (base_hrs * rate) + (OT_hrs * OT_rate)
 
-    print(total)
+    print("Pay:", total)
     
     # end assignment
 
